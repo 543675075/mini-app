@@ -1,0 +1,4 @@
+/* pages/home/c-popular/c-popular.wxss */
+image{
+  width: 100%;
+}

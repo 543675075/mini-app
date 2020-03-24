@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<c-swiper banner="{{banner}}"/>
+<c-recommend recommend="{{recommend}}"/>
+<c-popular/>
+<c-tab-control titles="{{titles}}"/>

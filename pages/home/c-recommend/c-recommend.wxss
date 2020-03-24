@@ -1,0 +1,15 @@
+/* pages/home/recommend/recommend.wxss */
+
+.recommend{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40rpx;
+  border-bottom: 16rpx solid #eee;
+  padding-bottom: 40rpx;
+}
+.recommend-item image{
+  width: 160rpx;
+}
+.title{
+  color: #ccc;
+}

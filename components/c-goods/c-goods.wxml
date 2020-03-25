@@ -1,0 +1,14 @@
+<!--components/c-goods/c-goods.wxml-->
+<view class="goods">
+  <block wx:for="{{goods}}" wx:key="index">
+    <view class="goods-item">
+      <image src="{{item.show.img}}" class="img"></image>
+      <view class="title">{{item.title}}</view>
+      <view class="price_cfav">
+        <text class="price">{{item.orgPrice}}</text>
+        <image src="/assets/images/common/favor.png" class="favor"></image>
+        <text class="cfav">{{item.cfav}}</text>
+      </view>
+    </view>
+  </block>
+</view>

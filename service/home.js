@@ -6,4 +6,13 @@ export function homeData() {
   })
 }
 
+export function goodsData(type,page) {
+  return request({
+    url: 'home/data',
+    data: {
+      type,
+      page
+    }
+  })
+}
 

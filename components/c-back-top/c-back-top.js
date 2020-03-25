@@ -1,13 +1,10 @@
-// pages/home/recommend/recommend.js
+// components/c-back-top/c-back-top.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    recommend:{
-      type: Array,
-      value: []
-    }
+
   },
 
   /**
@@ -21,8 +18,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    imgLoad(){
-      this.triggerEvent("imgLoad")
-    }
+
   }
 })

@@ -25,6 +25,7 @@ Component({
       this.setData({
         num : event.target.dataset.index
       })
+      this.triggerEvent("handleControl", this.data.num)
     }
   }
 })

@@ -1,0 +1,8 @@
+/* components/c-back-top/c-back-top.wxss */
+.back-top{
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

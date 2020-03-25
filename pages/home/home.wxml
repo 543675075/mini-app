@@ -1,5 +1,16 @@
 <!--pages/home/home.wxml-->
+
+<!-- 轮播图 -->
 <c-swiper banner="{{banner}}"/>
-<c-recommend recommend="{{recommend}}"/>
+<!-- 推荐 -->
+<c-recommend recommend="{{recommend}}" bind:imgLoad = "imgLoad"/>
+<!-- 本周流行 -->
 <c-popular/>
-<c-tab-control titles="{{titles}}"/>
+<!-- tab-control -->
+<c-tab-control titles="{{titles}}" bind:handleControl = "handleControl" class="isFixed" wx:if="{{isShow}}"/>
+
+<c-tab-control titles="{{titles}}" bind:handleControl = "handleControl" id="tab-control"/>
+<!-- 商品展示 -->
+<c-goods goods="{{goodsList[currentGoodsList].goods}}"/>
+<!-- 返回顶部 -->
+<c-back-top bind:tap="backTop"/>

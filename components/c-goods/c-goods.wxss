@@ -1,0 +1,32 @@
+/* components/c-goods/c-goods.wxss */
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40rpx;
+}
+
+.goods-item{
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+.title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.img{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.price_cfav{
+  display: flex;
+  justify-content: center;
+}
+.price{
+  color: #ff5777;
+}
+.favor{
+  width: 40rpx;
+  height: 40rpx;
+}

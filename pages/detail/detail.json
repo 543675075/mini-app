@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "c-swiper": "/components/c-swiper/c-swiper"
+  },
+  "navigationBarTitleText": "详情页"
+}

@@ -28,7 +28,8 @@ Page({
         goods: []
       }
     },
-    isShow: false
+    isShow: false,
+    controlTop: 0
   },
 
   /**
@@ -53,7 +54,10 @@ Page({
   //轮播和推荐数据
   _homeData() {
     homeData().then(res => {
-      const banner = res.data.data.banner.list //轮播图数据
+      console.log(res)
+      const banner = res.data.data.banner.list.map(value=>{
+        return value.image
+      }) //轮播图数据
       const recommend = res.data.data.recommend.list //推荐数据
 
       this.setData({
@@ -89,9 +93,11 @@ Page({
   },
   //监听tab-control的scrollTop
   imgLoad(){
-
     wx.createSelectorQuery().select("#tab-control").boundingClientRect(rect => {
       console.log(rect.top)
+      this.setData({
+        controlTop: rect.top
+      })
     }).exec()
   },
   //点击事件。。。。。。。。。。。。。。。。
@@ -124,7 +130,21 @@ Page({
     })
   },
 
- 
+ //监听页面滚动
+  onPageScroll(e){
+    const top = e.scrollTop
+    if (top >= this.data.controlTop){
+      this.setData({
+        isShow: true
+      })
+      
+    }else{
+      this.setData({
+        isShow: false
+      })
+    }
+  },
+
  
   /**
    * 页面上拉触底事件的处理函数

@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<c-swiper banner ="{{swiperImage}}" class="swiper-image"/>
+<view class="title">{{title}}</view>
+<text>{{price}}</text>
+<text>{{oldPrice}}</text>

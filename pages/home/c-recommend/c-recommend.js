@@ -14,7 +14,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    flag : true
   },
 
   /**
@@ -22,7 +22,10 @@ Component({
    */
   methods: {
     imgLoad(){
-      this.triggerEvent("imgLoad")
+      if(this.data.flag){
+        this.triggerEvent("imgLoad")
+        this.data.flag = false
+      }
     }
   }
 })

@@ -13,4 +13,4 @@
 <!-- 商品展示 -->
 <c-goods goods="{{goodsList[currentGoodsList].goods}}"/>
 <!-- 返回顶部 -->
-<c-back-top bind:tap="backTop"/>
+<c-back-top bind:tap="backTop" wx:if="{{isShow}}"/>
